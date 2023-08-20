@@ -1,0 +1,57 @@
+@import "./variables";
+
+body {
+    font-family: var(--font-montserrat);
+    background: $dark_700;
+}
+
+main {
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--font-montserrat);
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+h3 {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+p {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+p b,
+p strong {
+    font-weight: 600;
+}
+
+a {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-decoration: underline;
+}
+
+button {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
