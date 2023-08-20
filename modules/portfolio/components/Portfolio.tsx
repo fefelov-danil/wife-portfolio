@@ -5,8 +5,6 @@ import React, { useState } from 'react'
 import { carouselItems, paramsForCarousel } from '@/modules/portfolio/constants/carousel'
 import { useHangEventsOnDocument } from '@/modules/portfolio/hooks/useHangEventsOnDocument'
 import { PortfolioProjects } from '@/modules/portfolio/components/portfolioProjects/PortfolioProjects'
-import Link from 'next/link'
-import { RouteNames } from '@/constants/routes'
 import iconSet from '@/assets/icons/selection.json'
 import IcomoonReact from 'icomoon-react'
 
