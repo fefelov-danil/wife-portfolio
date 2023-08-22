@@ -41,7 +41,7 @@ export const CarouselItem = ({
     } as CSSProperties)
   }, [active])
 
-  const styleIndex = { '--index': 10 - Math.abs(index - active) } as CSSProperties
+  const styleIndex = { '--index': 4 - Math.abs(index - active) } as CSSProperties
   const styleAmountItems = { '--amountItems': amountItems } as CSSProperties
 
   const changeActiveHandler = () => {
