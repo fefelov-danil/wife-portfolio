@@ -26,6 +26,7 @@ export const Aroma = ({ setOpenProjectPopup }: Props) => {
       images={[aroma1, aroma2, aroma3, aroma4, aroma5, aroma6, aroma7, aroma8, aroma9, aroma10, aroma11]}
       link={'https://domen.ru/'}
       setOpenProjectPopup={setOpenProjectPopup}
+      isSquarePhotos
     >
       <motion.div
         className={styles.desc}

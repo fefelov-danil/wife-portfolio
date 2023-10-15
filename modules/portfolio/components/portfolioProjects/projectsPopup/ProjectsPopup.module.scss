@@ -149,6 +149,10 @@
   max-width: 1200px;
   margin: 0 auto;
 
+  &.squarePhotos .gallery {
+    max-width: 900px;
+  }
+
   .gallery {
     position: relative;
     max-width: 1000px;

@@ -2,6 +2,7 @@ import { Miratal } from '@/modules/portfolio/components/portfolioProjects/projec
 import { Aroma } from '@/modules/portfolio/components/portfolioProjects/projectsInfo/aroma/Aroma'
 import { Dr } from '@/modules/portfolio/components/portfolioProjects/projectsInfo/dr/Dr'
 import { Simplac } from '@/modules/portfolio/components/portfolioProjects/projectsInfo/simplac/Simplac'
+import { My } from '@/modules/portfolio/components/portfolioProjects/projectsInfo/my/Simplac'
 
 type Props = {
   openProject: number
@@ -15,6 +16,7 @@ export const PortfolioProjects = ({ openProject, setOpenProjectPopup }: Props) =
       {openProject === 1 && <Aroma setOpenProjectPopup={setOpenProjectPopup} />}
       {openProject === 2 && <Dr setOpenProjectPopup={setOpenProjectPopup} />}
       {openProject === 3 && <Simplac setOpenProjectPopup={setOpenProjectPopup} />}
+      {openProject === 4 && <My setOpenProjectPopup={setOpenProjectPopup} />}
     </>
   )
 }

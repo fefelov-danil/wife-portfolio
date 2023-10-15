@@ -1,9 +1,9 @@
 .carouselItem {
   $items: 4;
-  $x: calc(var(--active) * 310%);
+  $x: calc(var(--active) * 380%);
   $y: calc(var(--active) * 80%);
   $rot: calc(var(--active) * 40deg);
-  $opacity: calc(var(--index) / var(--amountItems) * 5 - 2);
+  $opacity: calc(var(--index) / var(--amountItems) * 6 - 1);
   position: absolute;
   top: 50%;
   left: 50%;

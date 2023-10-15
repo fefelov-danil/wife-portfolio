@@ -23,6 +23,7 @@ export const Miratal = ({ setOpenProjectPopup }: Props) => {
       images={[miratal1, miratal2, miratal3, miratal4, miratal5, miratal6, miratal7, miratal8]}
       link={'https://domen.ru/'}
       setOpenProjectPopup={setOpenProjectPopup}
+      isSquarePhotos
     >
       <motion.div
         className={styles.desc}

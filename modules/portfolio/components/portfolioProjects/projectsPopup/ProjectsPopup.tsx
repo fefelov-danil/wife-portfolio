@@ -17,6 +17,7 @@ type Props = {
   link: string
   github?: string
   setOpenProjectPopup: (openProject: number) => void
+  isSquarePhotos?: boolean
   children: ReactNode
 }
 
@@ -28,8 +29,11 @@ export const ProjectsPopup = ({
   link,
   github,
   setOpenProjectPopup,
+  isSquarePhotos = false,
   children,
 }: Props) => {
+  const finalSliderClass = isSquarePhotos ? `${styles.sliderCol} ${styles.squarePhotos}` : styles.sliderCol
+
   return (
     <motion.div
       className={styles.profilePopup}
@@ -73,7 +77,7 @@ export const ProjectsPopup = ({
         </motion.div>
         <div className={styles.desc}>{children}</div>
       </div>
-      <motion.div className={styles.sliderCol} variants={animation.fadeBottomAnimation} custom={0.75}>
+      <motion.div className={finalSliderClass} variants={animation.fadeBottomAnimation} custom={0.75}>
         <Slider title={title} images={images} />
       </motion.div>
     </motion.div>
